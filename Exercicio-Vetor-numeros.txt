@@ -1,0 +1,27 @@
+programa {
+    funcao verificarDivisivelPor4Ou9(numero: inteiro): booleano
+    inicio
+        se numero % 4 = 0 ou numero % 9 = 0 entao
+            retorne verdadeiro
+        senao
+            retorne falso
+        fimse
+    fimfuncao
+
+    // Função principal para testar a verificação
+    funcao inicio()
+    var
+        num: inteiro
+        resultado: booleano
+    inicio
+        escreva("Digite um número: ")
+        leia(num)
+
+        resultado <- verificarDivisivelPor4Ou9(num)
+        se resultado entao
+            escreva("verdadeiro")
+        senao
+            escreva("falso")
+        fimse
+    fimfuncao
+}
